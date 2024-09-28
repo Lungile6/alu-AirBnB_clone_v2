@@ -18,3 +18,4 @@ class TestAmenity(TestBaseModel):
         new = self.value()
         new.name = "amenity"
         self.assertEqual(type(new.name), str)
+        
