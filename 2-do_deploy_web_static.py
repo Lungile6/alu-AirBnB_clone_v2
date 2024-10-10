@@ -6,7 +6,11 @@ archive to the web servers
 
 from fabric.api import put, run, env
 from os.path import exists
+<<<<<<< HEAD
 env.hosts = ['54.89.109.87', '100.25.190.21']
+=======
+env.hosts = ['54.221.62.39', '44.223.30.163']
+>>>>>>> d0f7359933f620d274d05ff222aa31a06d480a74
 
 
 def do_deploy(archive_path):
@@ -27,4 +31,8 @@ def do_deploy(archive_path):
         run('ln -s {}{}/ /data/web_static/current'.format(path, no_ext))
         return True
     except:
+<<<<<<< HEAD
         return False
+=======
+        return False
+>>>>>>> d0f7359933f620d274d05ff222aa31a06d480a74
